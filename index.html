@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('./bag.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 text-white backdrop-blur-sm">
+    <h2 class="text-3xl font-thin tracking-wide hover:tracking-widest transition-all duration-500 cursor-pointer">
+      Soumya
+    </h2>
+
+    <div class="flex space-x-8 font-light">
+      <a href="#" class="hover:text-sky-400 transition-all duration-300">About</a>
+      <a href="#" class="hover:text-sky-400 transition-all duration-300">Projects</a>
+      <a href="#" class="hover:text-sky-400 transition-all duration-300">Services</a>
+      <a href="#" class="hover:text-sky-400 transition-all duration-300">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Login Box -->
+  <div class="flex-grow flex justify-center items-center">
+    <div class="bg-white/10 backdrop-blur-md shadow-lg rounded-2xl p-8 w-80 md:w-96 border border-white/20 text-white">
+
+      <!-- Icon + Title -->
+      <div class="flex flex-col items-center mb-6">
+        <i class="ri-user-line text-3xl mb-2"></i>
+        <h2 class="text-2xl font-thin tracking-wider">User Login</h2>
+      </div>
+
+      <!-- Form -->
+      <form action="#" class="flex flex-col space-y-4">
+        <input
+          type="text"
+          placeholder="Username"
+          class="bg-transparent border border-white/50 text-white rounded-md px-3 py-2 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-sky-400"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="bg-transparent border border-white/50 text-white rounded-md px-3 py-2 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-sky-400"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="bg-transparent border border-white/50 text-white rounded-md px-3 py-2 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-sky-400"
+        />
+
+        <!-- Remember + Forgot -->
+        <div class="flex items-center justify-between text-sm mt-1">
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input
+              type="checkbox"
+              class="accent-sky-400 cursor-pointer w-4 h-4"
+            />
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="text-sky-400 hover:text-white transition-all duration-300">Forgot Password?</a>
+        </div>
+
+        <!-- Button -->
+        <button
+          type="submit"
+          class="mt-4 bg-sky-700 hover:bg-sky-800 text-white uppercase tracking-widest py-2 rounded-md transition-all duration-300"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
